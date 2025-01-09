@@ -4,8 +4,8 @@ class Solution {
         ArrayList<Integer> arrayList=new ArrayList<>();
         for(int i=0;i<nums.length;i++){
             if(nums[i]!=val){
-                arrayList.add(nums[i]);
                 cnt++;
+                arrayList.add(nums[i]);
             }
         }
         for(int i=0;i<arrayList.size();i++){
