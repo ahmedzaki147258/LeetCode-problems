@@ -10,12 +10,10 @@ var reverseVowels = function(s) {
         if(\aeiouAEIOU\.indexOf(arr[i]) != -1) map.set(i, arr[i]);
     }
 
-    const keys = Array.from(map.keys());
-    const values = Array.from(map.values());
-    console.log(values)
-    const n2 = values.length;
+    const entries = Array.from(map.entries());
+    const n2 = entries.length;
     for(let i=0;i<n2;i++){
-        arr[keys[i]] = values[n2-i-1];
+        arr[entries[i][0]] = entries[n2-i-1][1];
     }
     return arr.join(\\);
 };
