@@ -2,8 +2,8 @@ function subsetXORSum(nums: number[]): number {
     let cnt=0;
     const subsets: number[][] = [[]];
     for (const el of nums) {
-        const last = subsets.length-1;
-        for (let i = 0; i <= last; i++) {
+        const last = subsets.length;
+        for (let i = 0; i < last; i++) {
         subsets.push([...subsets[i], el]);
         }
     }
