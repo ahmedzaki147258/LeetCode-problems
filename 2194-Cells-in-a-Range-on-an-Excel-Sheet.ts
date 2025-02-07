@@ -1,11 +1,8 @@
 function cellsInRange(s: string): string[] {
     const result: string[]=[];
-    const firstLetter=s.charCodeAt(0);
-    const endLetter=s.charCodeAt(3);
-    const start=+s[1];
-    const end=+s[4];
-    for(let i=firstLetter;i<=endLetter;i++){
-        for (let j=start;j<=end;j++) {
+    const [firstLetter, start, _, endLetter, end]=s.split("");
+    for(let i=firstLetter.charCodeAt(0);i<=endLetter.charCodeAt(0);i++){
+        for (let j=+start;j<=+end;j++) {
             result.push(String.fromCharCode(i)+j);
         }
     }
