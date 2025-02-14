@@ -13,7 +13,6 @@ class Solution {
         ListNode begin=new ListNode();
         ListNode res=begin;
         ListNode curr=head.next;
-
         while (curr!=null) {
             int sum=0;
             while (curr!=null && curr.val!=0) {
