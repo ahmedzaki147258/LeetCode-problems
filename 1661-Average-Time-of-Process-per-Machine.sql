@@ -1,7 +1,4 @@
 # Write your MySQL query statement below
--- with temporaryTable AS (
---     select machine_id
--- )
 select a.machine_id, cast(avg(b.timestamp-a.timestamp) as decimal(10,3)) as processing_time
 from Activity a
 join Activity b
