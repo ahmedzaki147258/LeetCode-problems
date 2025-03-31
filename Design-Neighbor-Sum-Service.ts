@@ -45,3 +45,10 @@ class NeighborSum {
     return [0, 0];
   }
 }
+
+/**
+ * Your NeighborSum object will be instantiated and called as such:
+ * var obj = new NeighborSum(grid)
+ * var param_1 = obj.adjacentSum(value)
+ * var param_2 = obj.diagonalSum(value)
+ */
